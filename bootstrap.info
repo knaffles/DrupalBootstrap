@@ -1,0 +1,80 @@
+; Theme Info -----------------------------------------------------------------
+; required information about the theme
+
+name = Bootstrap
+description = Bootstrap is a Zentropy subtheme. Zentropy is a highly-optimized, extensible and responive HTML5 base theme.
+screenshot = images/bootstrap.png
+core = 7.x
+base theme = zentropy
+
+; Stylesheets  ---------------------------------------------------------------
+; All devices get base stylesheet.
+; Layout styles are determined with media queries.
+
+; Want to know more about these styles or create your own responsive styles?
+;   Check out css/README.txt for detailed information on all things CSS.
+
+; Uncomment this line to disable the standard Zentropy base stylesheet
+;   WARNING: don't do this unless you really know what you are doing!
+;stylesheets[all][] = css/zentropy.css
+
+; This is your base stylesheet, it is added to all pages.
+stylesheets[all][] = css/bootstrap.css
+
+; Styles for progressively larger displays */
+; IMPORTANT: For media queries to work with Internet Explorer 6-8 you need to do ONE of the following:
+;   * Enable the Modernizr additional Zentropy component and build a version that includes Respond.js
+;   * Enable the Respond.js additional Zentropy component
+;   * Enable the css3-mediaqueries-js additional Zentropy component
+; For more information on Zentropy components please see the README.txt file in the Zentropy folder or check out the Zentropy project page: http://drupal.org/project/zentropy
+
+stylesheets[only screen and (min-width : 320px) and (max-width : 480px)][] = css/layout/bootstrap-320.css
+stylesheets[only screen and (min-width : 480px) and (max-width: 768px)][] = css/layout/bootstrap-480.css
+stylesheets[only screen and (min-width : 768px) and (max-width: 992px)][] = css/layout/bootstrap-768.css
+stylesheets[only screen and (min-width : 992px) and (max-width: 1382px)][] = css/layout/bootstrap-992.css
+stylesheets[only screen and (min-width : 1382px)][] = css/layout/bootstrap-1382.css
+
+; Styles iPhone 4, Opera Mobile 11 and other high pixel ratio devices.
+stylesheets[only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min--moz-device-pixel-ratio: 1.5)][] = css/bootstrap-hipixel.css
+
+; If you are targetting Internet Explorer 6-8 you are not using the "css3-mediaqueries-js" additional Zentropy component you should uncomment the below line and create a print stylesheet.
+; stylesheets[print][] = css/bootstrap-print.css
+
+; Javascript ---------------------------------------------------------------
+; Add your awesome javascript in the below file.
+scripts[] = js/bootstrap.js
+
+; Regions --------------------------------------------------------------------
+; These content regions are available for block placement.
+; Some are special hidden regions: page_top, page_bottom, and help.
+; Subthemes must re-declare regions.
+
+regions[header] = Header
+regions[help] = Help
+regions[page_top] = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured] = Featured
+regions[content_top] = Content top
+regions[content] = Content
+regions[content_bottom] = Content bottom
+
+regions[sidebar_first] = First Sidebar
+regions[sidebar_second] = Second Sidebar
+
+regions[triptych_first] = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last] = Triptych last
+
+regions[footer_firstcolumn] = Footer first column
+regions[footer_secondcolumn] = Footer second column
+regions[footer_thirdcolumn] = Footer third column
+regions[footer_fourthcolumn] = Footer fourth column
+regions[footer] = Footer
+; Information added by drupal.org packaging script on 2012-03-13
+version = "7.x-2.0-beta11"
+core = "7.x"
+project = "zentropy"
+datestamp = "1331600752"
+

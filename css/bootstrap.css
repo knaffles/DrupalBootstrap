@@ -1,0 +1,44 @@
+/* Place your theme's base styles here! */
+/* Remember, this theme uses media queries for responsive layouts! */
+/* This means that you should only put styles here that are common to all screen sizes. */
+
+
+
+
+/* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */
+/* Zentropy ships with a sweet spinning Druplicon Ajax Loader but we understand it may be a bit too awesome for everyday use. */
+
+/*.zentropy-loader .zentropy-loader-image {
+  background-image: url('../images/your-awesome-loader.gif');
+}*/
+
+
+
+/* If you are using the CSS3Pie component, add the following style to the selectors you want to support: */
+/* behavior: url('/sites/all/libraries/css3pie/PIE.htc'); */
+/*  For example:
+
+    .rounded-corners {
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      border-radius: 6px;
+      behavior: url('/sites/all/libraries/css3pie/PIE.htc');
+    }
+
+    NOTE: If you are having trouble with certain elements, adding "position: relative;" can help fix things!
+*/
+
+
+
+/* Print Styles
+-------------------------------------------------------------------------------
+  Inlined to avoid required HTTP connection: h5bp.com/r
+
+  If you are targeting Internet Explorer 6-8 you can:
+    * Either enable the "css3-mediaqueries-js" additional component (for more info on components please see Zentropy's README.txt or project page: http://drupal.org/project/zentropy
+    * Delete the below lines and uncomment the print stylesheet in bootstrap.info
+  If not, uncomment the below lines and add your print styles!
+
+/* @media print {
+  
+}*/
