@@ -20,6 +20,7 @@ function bootstrap_preprocess_html(&$vars) {
   // Add CSS files for Internet Explorer-specific styles.
   drupal_add_css(path_to_theme() . '/css/ie/bootstrap-ielt9.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'browsers' => array('IE' => 'lt IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie/bootstrap-ielt8.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'browsers' => array('IE' => 'lt IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
+  drupal_add_css(path_to_theme() . '/css/wireframe-override.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'preprocess' => FALSE));
   
   /* Add your own custom logic in between the following lines:
 	--------------------------------------------------------------------*/

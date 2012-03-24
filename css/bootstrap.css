@@ -2,7 +2,22 @@
 /* Remember, this theme uses media queries for responsive layouts! */
 /* This means that you should only put styles here that are common to all screen sizes. */
 
+/* Basic layout */
+.region-sidebar-first{padding-right:20px}
+.region-sidebar-second{padding-left:20px}
 
+/* Basic styles */
+body{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4,h5,h6{margin:0 0 1em}
+h1{font-size:24px;font-size:2.4rem}
+h2{font-size:20px;font-size:2rem}
+h3{font-size:16px;font-size:1.6rem}
+h4{font-size:14px;font-size:1.4rem}
+h5{font-size:12px;font-size:1.2rem}
+h6{font-size:10px;font-size:1rem}
+p{margin:0 0 1em}
 
 
 /* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */
