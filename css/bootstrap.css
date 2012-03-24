@@ -1,34 +1,389 @@
 /* Place your theme's base styles here! */
 /* Remember, this theme uses media queries for responsive layouts! */
 /* This means that you should only put styles here that are common to all screen sizes. */
-
 /* Basic layout */
-.region-sidebar-first{padding-right:20px}
-.region-sidebar-second{padding-left:20px}
+.region-sidebar-first {
+padding-right:20px
+}
+
+.region-sidebar-second {
+padding-left:20px
+}
 
 /* Basic styles */
-body{font-family:"Helvetica Neue", Helvetica, Arial, sans-serif}
-a{text-decoration:none}
-a:hover{text-decoration:underline}
-h1,h2,h3,h4,h5,h6{margin:0 0 1em}
-h1{font-size:24px;font-size:2.4rem}
-h2{font-size:20px;font-size:2rem}
-h3{font-size:16px;font-size:1.6rem}
-h4{font-size:14px;font-size:1.4rem}
-h5{font-size:12px;font-size:1.2rem}
-h6{font-size:10px;font-size:1rem}
-p{margin:0 0 1em}
+body {
+color:#333333;
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+line-height:1.4
+}
 
+a {
+text-decoration:none;
+color:#0088cc;
+text-decoration:none
+}
+
+a:focus {
+outline:thin dotted #333;
+outline:5px auto 0;
+outline-offset:-2px
+}
+
+a:hover,a:active {
+outline:0
+}
+
+a:visited {
+color:#0088cc
+}
+
+a:hover {
+color:#005580;
+text-decoration:underline
+}
+
+a:hover {
+text-decoration:underline
+}
+
+h1,h2,h3,h4,h5,h6 {
+color:inherit;
+font-weight:bold;
+text-rendering:optimizelegibility
+}
+
+h1 {
+font-size:30px;
+font-size:3rem;
+line-height:36px
+}
+
+h2 {
+font-size:24px;
+font-size:2.4rem;
+line-height:36px
+}
+
+h3 {
+font-size:18px;
+font-size:1.8rem;
+line-height:27px
+}
+
+h4,h5,h6 {
+line-height:18px
+}
+
+h4 {
+font-size:14px;
+font-size:1.4rem
+}
+
+h5 {
+font-size:12px;
+font-size:1.2rem
+}
+
+h6 {
+font-size:11px;
+font-size:1.1rem;
+text-transform:uppercase
+}
+
+h1 > a:hover {
+text-decoration:none
+}
+
+p {
+font-size:13px;
+font-size:1.3rem;
+margin:0 0 10px
+}
+
+header {
+margin-bottom:16px
+}
+
+form {
+margin:0 0 18px
+}
+
+fieldset {
+padding:0;
+margin:0;
+border:0
+}
+
+legend {
+display:block;
+width:100%;
+padding:0;
+margin-bottom:27px;
+font-size:19px;
+font-size:1.9rem;
+line-height:36px;
+color:#333333;
+border:0;
+border-bottom:1px solid #eee
+}
+
+label,input,button,select,textarea {
+font-size:13px;
+font-size:1.3rem;
+font-weight:normal;
+line-height:18px
+}
+
+input,button,select,textarea {
+font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
+}
+
+label {
+display:block;
+margin-bottom:5px;
+color:#333333
+}
+
+.form-item input,textarea,select,.uneditable-input {
+display:inline-block;
+height:18px;
+padding:4px;
+font-size:13px;
+font-size:1.3rem;
+line-height:18px;
+color:#555555;
+border:1px solid #cccccc;
+-webkit-border-radius:3px;
+-moz-border-radius:3px;
+border-radius:3px;
+width:75%
+}
+
+.uneditable-textarea {
+width:auto;
+height:auto
+}
+
+label input,label textarea,label select {
+display:block
+}
+
+input[type="image"],input[type="checkbox"],input[type="radio"] {
+width:auto;
+height:auto;
+padding:0;
+margin:3px 0;
+margin-top:0;
+/* IE7 */
+line-height:normal;
+cursor:pointer;
+-webkit-border-radius:0;
+-moz-border-radius:0;
+border-radius:0;
+border:0 \9
+/* IE9 and down */
+}
+
+input[type="image"] {
+border:0
+}
+
+input[type="file"] {
+width:auto;
+padding:initial;
+line-height:initial;
+border:initial;
+background-color:#ffffff;
+background-color:initial;
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none
+}
+
+input[type="button"],input[type="reset"],input[type="submit"] {
+width:auto;
+height:auto
+}
+
+select,input[type="file"] {
+height:28px;
+/* In IE7, the height of the select element cannot be changed by height, only font-size */
+margin-top:4px;
+/* For IE7, add top margin to align select with labels */
+line-height:28px
+}
+
+input[type="file"] {
+line-height:18px \9
+}
+
+select {
+width:75%;
+background-color:#ffffff
+}
+
+select[multiple],select[size] {
+height:auto
+}
+
+input[type="image"] {
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none
+}
+
+textarea {
+height:auto
+}
+
+input[type="hidden"] {
+display:none
+}
+
+.radio,.checkbox {
+padding-left:18px
+}
+
+.radio input[type="radio"],.checkbox input[type="checkbox"] {
+float:left;
+margin-left:-18px
+}
+
+.controls > .radio:first-child,.controls > .checkbox:first-child {
+padding-top:5px
+}
+
+.radio.inline,.checkbox.inline {
+display:inline-block;
+padding-top:5px;
+margin-bottom:0;
+vertical-align:middle
+}
+
+.radio.inline + .radio.inline,.checkbox.inline + .checkbox.inline {
+margin-left:10px
+}
+
+.form-item input,textarea {
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);
+-webkit-transition:border linear .2s box-shadow linear .2s;
+-moz-transition:border linear .2s box-shadow linear .2s;
+-ms-transition:border linear .2s box-shadow linear .2s;
+-o-transition:border linear .2s box-shadow linear .2s;
+transition:border linear .2s box-shadow linear .2s
+}
+
+.form-item input:focus,textarea:focus {
+border-color:rgba(82,168,236,0.8);
+-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+-moz-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+box-shadow:inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);
+outline:0;
+outline:thin dotted \9
+/* IE6-9 */
+}
+
+.form-item input.error,.form-item textarea.error,.form-item select.error {
+color:#b94a48;
+border:1px solid #b94a48
+}
+
+.form-item input.error:focus,.form-item textarea.error:focus,.form-item select.error:focus {
+border-color:#953b39;
+-webkit-box-shadow:0 0 6px #d59392;
+-moz-box-shadow:0 0 6px #d59392;
+box-shadow:0 0 6px #d59392
+}
+
+input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus,select:focus {
+-webkit-box-shadow:none;
+-moz-box-shadow:none;
+box-shadow:none;
+outline:thin dotted #333;
+outline:5px auto 0;
+outline-offset:-2px
+}
+
+input[class*="span"],select[class*="span"],textarea[class*="span"],.uneditable-input {
+float:none;
+margin-left:0
+}
+
+.form-item input,textarea,.uneditable-input {
+margin-left:0
+}
+
+input[disabled],select[disabled],textarea[disabled],input[readonly],select[readonly],textarea[readonly] {
+background-color:#eeeeee;
+border-color:#ddd;
+cursor:not-allowed
+}
+
+/* Submit buttons */
+.form-actions input {
+width:auto;
+height:auto;
+display:inline-block;
+display:inline;
+/* IE7 inline-block hack */
+zoom:1;
+padding:4px 10px;
+margin-bottom:0;
+font-size:13px;
+line-height:18px;
+color:#333333;
+text-align:center;
+text-shadow:0 1px 1px rgba(255,255,255,0.75);
+vertical-align:middle;
+background-color:#f5f5f5;
+background-image:0;
+background-image:0;
+background-image:0 to(#e6e6e6));
+background-image:0;
+background-image:0;
+background-image:linear-gradient(top,#ffffff,#e6e6e6);
+background-repeat:repeat-x;
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#e6e6e6',GradientType=0);
+border-color:#e6e6e6 #e6e6e6 #bfbfbf;
+border-color:rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+filter:progid:dximagetransform.microsoft.gradient(enabled=false);
+border:1px solid #cccccc;
+border-bottom-color:#b3b3b3;
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+box-shadow:inset 0 1px 0 rgba(255,255,255,0.2), 0 1px 2px rgba(0,0,0,0.05);
+cursor:pointer;
+margin-left:.3em
+}
+
+.form-actions input:hover {
+color:#333333;
+text-decoration:none;
+background-color:#e6e6e6;
+background-position:0 -15px;
+-webkit-transition:background-position .1s linear;
+-moz-transition:background-position .1s linear;
+-ms-transition:background-position .1s linear;
+-o-transition:background-position .1s linear;
+transition:background-position .1s linear
+}
+
+.form-actions input:focus {
+outline:thin dotted #333;
+outline:5px auto 0;
+outline-offset:-2px
+}
 
 /* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */
 /* Zentropy ships with a sweet spinning Druplicon Ajax Loader but we understand it may be a bit too awesome for everyday use. */
-
 /*.zentropy-loader .zentropy-loader-image {
   background-image: url('../images/your-awesome-loader.gif');
 }*/
-
-
-
 /* If you are using the CSS3Pie component, add the following style to the selectors you want to support: */
 /* behavior: url('/sites/all/libraries/css3pie/PIE.htc'); */
 /*  For example:
@@ -42,9 +397,6 @@ p{margin:0 0 1em}
 
     NOTE: If you are having trouble with certain elements, adding "position: relative;" can help fix things!
 */
-
-
-
 /* Print Styles
 -------------------------------------------------------------------------------
   Inlined to avoid required HTTP connection: h5bp.com/r
