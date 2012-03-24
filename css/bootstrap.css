@@ -108,6 +108,7 @@ form {
 margin:0 0 18px
 }
 
+/* Forms */
 fieldset {
 padding:0;
 margin:0;
@@ -377,6 +378,65 @@ transition:background-position .1s linear
 outline:thin dotted #333;
 outline:5px auto 0;
 outline-offset:-2px
+}
+
+/* Navigation */
+nav.main-menu {
+color: #999999;
+*position: relative;
+*z-index: 2;
+overflow: visible;
+margin-bottom: 18px;
+padding-left: 20px;
+padding-right: 20px;
+min-height: 40px; /* would be better if nav was clearfixed */
+background-color: #2c2c2c;
+background-image: -moz-linear-gradient(top, #333333, #222222);
+background-image: -ms-linear-gradient(top, #333333, #222222);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+background-image: -webkit-linear-gradient(top, #333333, #222222);
+background-image: -o-linear-gradient(top, #333333, #222222);
+background-image: linear-gradient(top, #333333, #222222);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1)
+}
+nav.main-menu ul.main-menu {
+position: relative;
+left: 0;
+display: block;
+float: left;
+margin: 0 10px 0 0; 
+}
+nav.main-menu ul.main-menu > li {
+display: block;
+float: left;
+line-height:;
+}
+nav.main-menu ul.main-menu > li > a {
+display: block;
+float: none;
+padding: 10px 10px 11px;
+line-height: 19px;
+color: #999999;
+text-decoration: none;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+nav.main-menu ul.main-menu > li > a:hover {
+background-color: transparent;
+color: #ffffff;
+text-decoration: none;
+}
+nav.main-menu ul.main-menu .active > a,
+nav.main-menu ul.main-menu .active > a:hover {
+color: #ffffff;
+text-decoration: none;
+background-color: #222222;
 }
 
 /* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */
