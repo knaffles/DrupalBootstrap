@@ -73,9 +73,10 @@ regions[footer_thirdcolumn] = Footer third column
 regions[footer_fourthcolumn] = Footer fourth column
 regions[footer] = Footer
 
-; Information added by drupal.org packaging script on 2012-03-13
-version = "7.x-2.0-beta11"
-core = "7.x"
-project = "zentropy"
-datestamp = "1331600752"
+; Options -------------------------------------------------------------------
+
+; Select an option for the style of the main nav
+; Options include:
+; * bar - a Twitter-bootstrap-like nav bar
+settings[nav_class] = 'bar'
 

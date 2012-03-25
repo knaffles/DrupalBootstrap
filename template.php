@@ -11,6 +11,18 @@
  */
 function bootstrap_preprocess_maintenance_page(&$vars) {
   drupal_add_css(drupal_get_path('theme', 'bootstrap') . '/css/bootstrap-maintenance.css', array('group' => CSS_THEME));
+  $vars['nav_class'] = theme_get_setting('nav_class');
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function bootstrap_preprocess_page(&$vars) {
+  if (theme_get_setting('nav_class')) {
+    $vars['nav_class'] = theme_get_setting('nav_class');
+  } else {
+    $vars['nav_class'] = '';
+  }
 }
 
 /**
