@@ -50,6 +50,7 @@ scripts[] = js/bootstrap.js
 ; Subthemes must re-declare regions.
 
 regions[header] = Header
+regions[navigation] = Navigation
 regions[help] = Help
 regions[page_top] = Page top
 regions[page_bottom] = Page bottom

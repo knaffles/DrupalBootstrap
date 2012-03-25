@@ -467,6 +467,11 @@ outline-offset:-2px
 }
 
 /* Navigation */
+nav.main-menu .block-title {
+position: absolute !important;
+clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+clip: rect(1px, 1px, 1px, 1px);
+}
 nav.main-menu.bar {
 color: #999999;
 *position: relative;
@@ -492,19 +497,22 @@ border-radius: 4px;
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1)
 }
-nav.main-menu.bar ul.main-menu {
+nav.main-menu.bar ul.menu, nav.main-menu.bar ul.main-menu {
+display: block;
 position: relative;
 left: 0;
+float: left;
+margin: 0 10px 0 0;
+width:100%; 
+}
+nav.main-menu.bar ul.menu > li, nav.main-menu.bar ul.main-menu > li {
 display: block;
 float: left;
-margin: 0 10px 0 0; 
+line-height: 18px;
+padding:0;
+margin:0;
 }
-nav.main-menu.bar ul.main-menu > li {
-display: block;
-float: left;
-line-height:;
-}
-nav.main-menu.bar ul.main-menu > li > a {
+nav.main-menu.bar ul.menu > li > a, nav.main-menu.bar ul.main-menu > li > a {
 display: block;
 float: none;
 padding: 10px 10px 11px;
@@ -513,11 +521,13 @@ color: #999999;
 text-decoration: none;
 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-nav.main-menu.bar ul.main-menu > li > a:hover {
+nav.main-menu.bar ul.menu > li > a:hover, nav.main-menu.bar ul.main-menu > li > a:hover {
 background-color: transparent;
 color: #ffffff;
 text-decoration: none;
 }
+nav.main-menu.bar ul.menu .active > a,
+nav.main-menu.bar ul.menu .active > a:hover,
 nav.main-menu.bar ul.main-menu .active > a,
 nav.main-menu.bar ul.main-menu .active > a:hover {
 color: #ffffff;
