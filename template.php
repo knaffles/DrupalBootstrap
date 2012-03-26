@@ -37,12 +37,6 @@ function bootstrap_preprocess_html(&$vars) {
   /* Add your own custom logic in between the following lines:
 	--------------------------------------------------------------------*/
 
-
-
-
-
-
-
   /* STOP!!!! Don't edit this function below this line!
 	--------------------------------------------------------------------*/
 
@@ -66,4 +60,15 @@ function bootstrap_preprocess_html(&$vars) {
   #hoverintent#
   
   #bgiframe#
+}
+
+/**
+ * Implements template_preprocess_block().
+ */
+function bootstrap_preprocess_block(&$vars, $hook) {
+  // Add template suggestion for menu block module.
+  // Menu blocks are best served up a <nav>.
+  if ($vars['block']->module == 'menu_block') {
+    $vars['theme_hook_suggestions'][] = 'block__menu';
+  }
 }
