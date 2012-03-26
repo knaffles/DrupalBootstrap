@@ -1,15 +1,8 @@
 /* Place your theme's base styles here! */
 /* Remember, this theme uses media queries for responsive layouts! */
 /* This means that you should only put styles here that are common to all screen sizes. */
+
 /* Basic layout */
-.region-sidebar-first {
-padding-right:20px
-}
-
-.region-sidebar-second {
-padding-left:20px
-}
-
 header {
 margin-bottom:16px
 }
@@ -20,90 +13,73 @@ color:#333333;
 font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
 line-height:1.4
 }
-
 a {
 text-decoration:none;
 color:#0088cc;
 text-decoration:none
 }
-
 a:focus {
 outline:thin dotted #333;
 outline:5px auto 0;
 outline-offset:-2px
 }
-
 a:hover,a:active {
 outline:0
 }
-
 a:visited {
 color:#0088cc
 }
-
 a:hover {
 color:#005580;
 text-decoration:underline
 }
-
 a:hover {
 text-decoration:underline
 }
-
 h1,h2,h3,h4,h5,h6 {
 color:inherit;
 font-weight:bold;
 text-rendering:optimizelegibility
 }
-
 h1 {
 font-size:30px;
 font-size:3rem;
 line-height:36px
 }
-
 h2 {
 font-size:24px;
 font-size:2.4rem;
 line-height:36px
 }
-
 h3 {
 font-size:18px;
 font-size:1.8rem;
 line-height:27px
 }
-
 h4,h5,h6 {
 line-height:18px
 }
-
 h4 {
 font-size:14px;
 font-size:1.4rem
 }
-
 h5 {
 font-size:12px;
 font-size:1.2rem
 }
-
 h6 {
 font-size:11px;
 font-size:1.1rem;
 text-transform:uppercase
 }
-
 h1 > a:hover {
 text-decoration:none
 }
-
 p {
 font-size:13px;
 font-size:1.3rem;
 margin:0 0 10px
 }
-
 ul,
 ol {
 padding: 0;
@@ -124,11 +100,9 @@ list-style: decimal;
 li {
 line-height: 18px;
 }
-
 em {
 font-style: italic;
 }
-
 abbr[title] {
 border-bottom: 1px dotted #ddd;
 cursor: help;
@@ -223,6 +197,29 @@ padding: 0;
 color: inherit;
 background-color: transparent;
 border: 0;
+}
+
+/* Region styles */
+.sidebar h2 {
+font-size:18px;
+font-size:1.8rem;
+line-height:27px;
+}
+.sidebar h3,.sidebar h4,.sidebar h5 {
+line-height:18px
+}
+.sidebar h3 {
+font-size:14px;
+font-size:1.4rem
+}
+.sidebar h4 {
+font-size:12px;
+font-size:1.2rem
+}
+.sidebar h5 {
+font-size:11px;
+font-size:1.1rem;
+text-transform:uppercase
 }
 
 /* Forms */
