@@ -2326,7 +2326,7 @@ input[type="submit"].btn.btn-mini {
   opacity: 0.75;
   filter: alpha(opacity=75);
 }
-.nav {
+/*.nav {
   margin-left: 0;
   margin-bottom: 18px;
   list-style: none;
@@ -2373,7 +2373,7 @@ input[type="submit"].btn.btn-mini {
 }
 .nav-list [class^="icon-"] {
   margin-right: 2px;
-}
+}*/
 .nav-list .divider {
   height: 1px;
   margin: 8px 1px;
