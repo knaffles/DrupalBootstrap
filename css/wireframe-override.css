@@ -1,5 +1,5 @@
 /* Override Zentropy's default wireframe styles */
-.wireframe-mode .page,
+/*.wireframe-mode .page,
 .wireframe-mode header,
 .wireframe-mode footer,
 .wireframe-mode .featured,
@@ -21,4 +21,4 @@
 .wireframe-mode .region-footer-thirdcolumn,
 .wireframe-mode .region-footer-fourthcolumn,
 nav
-{background-color:#fff !important;outline:1px solid #ccc}
+{background-color:#fff !important;outline:1px solid #ccc}*/
