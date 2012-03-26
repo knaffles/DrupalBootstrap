@@ -1,3 +1,13 @@
+Important notes about this theme:
+
+* This theme assumes that you will assign a menu block to either the navigation region (for top nav), or either the first or second sidebar (for left/right nav). Navigation does not appear by default
+
+
+
+ORIGINAL README
+
+================
+
 ### Zentropy - The ultimate non-grid based responsive HTML5 base theme ###
 
 This is the directory for all your CSS files.

@@ -76,7 +76,7 @@ regions[footer] = Footer
 
 ; Options -------------------------------------------------------------------
 
-; Select an option for the style of the main nav
+; Select an option for the style of the top main nav
 ; Options include:
 ; * bar - a Twitter-bootstrap-like nav bar
 settings[nav_class] = 'bar'
