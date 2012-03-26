@@ -222,6 +222,105 @@ font-size:1.1rem;
 text-transform:uppercase
 }
 
+/* Tabs */
+.tabs {
+margin-bottom:10px
+}
+.tabs ul.primary {
+padding:0 3px;
+margin:0;
+overflow:hidden;
+border:none;
+background:transparent url(../images/tabs-border.png) repeat-x left bottom
+}
+.tabs ul.primary li {
+display:block;
+float:left;
+vertical-align:bottom;
+margin:0 5px 0 0
+}
+.tabs ul.primary li.active a {
+border-bottom:1px solid #ffffff
+}
+.tabs ul.primary li a {
+border:1px solid #bbb;
+color:#000;
+background-color:#ededed;
+height:1.8em;
+line-height:1.9;
+display:block;
+font-size:.929em;
+float:left;
+padding:0 10px 3px;
+margin:0;
+-khtml-border-radius-topleft:6px;
+-moz-border-radius-topleft:6px;
+-webkit-border-top-left-radius:6px;
+border-top-left-radius:6px;
+-khtml-border-radius-topright:6px;
+-moz-border-radius-topright:6px;
+-webkit-border-top-right-radius:6px;
+border-top-right-radius:6px
+}
+.tabs ul.primary li.active a {
+background-color:#ffffff;
+border-bottom: 1px solid white;
+}
+.tabs ul.secondary {
+border-bottom:none;
+padding:.5em 0
+}
+.tabs ul.secondary li {
+display:block;
+float:left
+}
+.tabs ul.secondary li:last-child {
+border-right:none
+}
+.tabs ul.secondary li:first-child {
+padding-left:0
+}
+.tabs ul.secondary li a {
+padding:.25em .5em
+}
+.tabs ul.secondary li a.active {
+background:#f2f2f2;
+border-bottom:none;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-khtml-border-radius:5px;
+border-radius:5px
+}
+ul.action-links {
+list-style:none;
+margin:5px;
+padding:.5em 1em
+}
+ul.action-links li {
+display:inline-block;
+margin-left:10px
+}
+ul.action-links li a {
+padding-left:15px;
+background:url(../images/add.png) no-repeat left center;
+margin:0 10px 0 0
+}
+ul.primary li {
+padding:0;
+}
+ul.primary li a:hover {
+border-color: #ccc;
+border-bottom-color: #ddd;
+border-width:1px;
+border-style:solid;
+background-color:#ddd;
+}
+ul.primary li.active a {
+background-color: white;
+border: 1px solid #BBB;
+border-bottom: 1px solid #ffffff;
+}
+
 /* Forms */
 form {
 margin:0 0 18px
