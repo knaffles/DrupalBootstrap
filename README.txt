@@ -1,3 +1,9 @@
 Some notes about this theme:
 
-1) You must add a menu block to the navigation region for any navigation to appear
+1) You must add a menu block to either the navigation region or a sidebar for any navigation to appear. This theme does not automatically render navigation as most Drupal themes do.
+
+2) This theme is a subthem of the Zentropy theme. You have to install the Zentropy theme on your site in order for this theme to work. Zentropy is here:
+
+http://drupal.org/project/zentropy
+
+3) To override any templates, start by taking a copy of the appropriate template from the Zentropy theme templates and create a copy in this theme's template folder.
