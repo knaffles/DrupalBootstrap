@@ -330,8 +330,15 @@ margin:0 0 18px
 }
 fieldset {
 padding:0;
-margin:0;
-border:0
+margin:0 0 20px 0;
+border:none;
+}
+.fieldset-wrapper {
+border:1px solid #eee;
+padding:10px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
 }
 legend {
 display:block;
@@ -342,8 +349,7 @@ font-size:19px;
 font-size:1.9rem;
 line-height:36px;
 color:#333333;
-border:0;
-border-bottom:1px solid #eee
+border:none;
 }
 label,input,button,select,textarea {
 font-size:13px;
@@ -357,7 +363,11 @@ font-family:"Helvetica Neue", Helvetica, Arial, sans-serif
 label {
 display:block;
 margin-bottom:5px;
-color:#333333
+color:#333333;
+font-weight:700;
+}
+.form-item {
+margin-bottom:20px;
 }
 .form-item input,textarea,select,.uneditable-input {
 display:inline-block;
@@ -371,7 +381,7 @@ border:1px solid #cccccc;
 -webkit-border-radius:3px;
 -moz-border-radius:3px;
 border-radius:3px;
-width:75%
+width:auto;
 }
 .uneditable-textarea {
 width:auto;
@@ -397,7 +407,7 @@ border:0 \9; /* IE9 and down */
 input[type="image"] {
 border:0
 }
-input[type="file"] {
+.form-item input[type="file"] {
 width:auto;
 padding:initial;
 line-height:initial;
@@ -423,7 +433,6 @@ input[type="file"] {
 line-height:18px \9
 }
 select {
-width:75%;
 background-color:#ffffff
 }
 select[multiple],select[size] {
@@ -508,6 +517,10 @@ background-color:#eeeeee;
 border-color:#ddd;
 cursor:not-allowed
 }
+/* When js is enabled */
+html.js fieldset.collapsed {
+height:auto;
+}
 
 /* Submit buttons */
 .form-actions input {
@@ -563,6 +576,14 @@ transition:background-position .1s linear
 outline:thin dotted #333;
 outline:5px auto 0;
 outline-offset:-2px
+}
+#edit-actions input {
+margin-right:10px;
+}
+
+/* Search */
+.sidebar .block-search-form .form-item input {
+width:100px;
 }
 
 /* Navigation */
