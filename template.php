@@ -14,13 +14,29 @@ function bootstrap_preprocess_maintenance_page(&$vars) {
 }
 
 /**
+ * Implements template_preprocess_block().
+ */
+function bootstrap_preprocess_block(&$vars, $hook) {
+  // Add template suggestion for menu block module.
+  // Menu blocks are best served up a <nav>.
+  if ($vars['block']->module == 'menu_block') {
+    $vars['theme_hook_suggestions'][] = 'block__menu';
+  }
+  if (theme_get_setting('nav_class')) {
+    $vars['nav_class'] = theme_get_setting('nav_class');
+  } else {
+    $vars['nav_class'] = '';
+  }
+
+}
+
+/**
  * Implements template_preprocess_html().
  */
 function bootstrap_preprocess_html(&$vars) {
   // Add CSS files for Internet Explorer-specific styles.
   drupal_add_css(path_to_theme() . '/css/ie/bootstrap-ielt9.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'browsers' => array('IE' => 'lt IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css(path_to_theme() . '/css/ie/bootstrap-ielt8.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'browsers' => array('IE' => 'lt IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
-  drupal_add_css(path_to_theme() . '/css/wireframe-override.css', array('group' => CSS_THEME, 'every_page' => TRUE, 'media' => 'screen', 'preprocess' => FALSE));
   
   /* Add your own custom logic in between the following lines:
 	--------------------------------------------------------------------*/
@@ -48,21 +64,4 @@ function bootstrap_preprocess_html(&$vars) {
   #hoverintent#
   
   #bgiframe#
-}
-
-/**
- * Implements template_preprocess_block().
- */
-function bootstrap_preprocess_block(&$vars, $hook) {
-  // Add template suggestion for menu block module.
-  // Menu blocks are best served up a <nav>.
-  if ($vars['block']->module == 'menu_block') {
-    $vars['theme_hook_suggestions'][] = 'block__menu';
-  }
-  if (theme_get_setting('nav_class')) {
-    $vars['nav_class'] = theme_get_setting('nav_class');
-  } else {
-    $vars['nav_class'] = '';
-  }
-
 }

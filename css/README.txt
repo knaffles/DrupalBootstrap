@@ -1,18 +1,4 @@
-Important notes about this theme:
-
-* This theme assumes that you will assign a menu block to either the navigation region (for top nav), or either the first or second sidebar (for left/right nav). Navigation does not appear by default
-
-
-
-ORIGINAL README
-
-================
-
-### Zentropy - The ultimate non-grid based responsive HTML5 base theme ###
-
-This is the directory for all your CSS files.
-
-if you add a new stylesheet here, you must call it from the theme .info file.
+If you add a new stylesheet here, you must call it from the theme .info file.
 
 The stylesheets are organized as follows:
 
@@ -38,15 +24,3 @@ The default stylesheets included are:
  * layout/bootstrap-992.css - Styles for screens between 992px and 1382px
  * layout/bootstrap-1382.css - Styles for screens 1382px and larger
  * layout/bootstrap-retina.css - Styles for retina display devices (used to include higher resolution images)
-
-
-Creating your own responsive styles:
-------------------------------------
-
-If for whatever reason you aren't happy with the default media queries provided by Zentropy it is EASY to create your own!
-
-  * Define what screen size (or device) you are targetting
-  * Determine the media query (Tip: the current ones in bootstrap.info should get you started fast)
-  * Create the stylesheet (suggestion, pick a name using the same standard as the others, for organization)
-  * Add the media query to bootstrap.info
-  * Profit! :)
