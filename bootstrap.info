@@ -2,7 +2,7 @@
 ; required information about the theme
 
 name = Bootstrap
-description = Bootstrap is a Zentropy subtheme. Zentropy is a highly-optimized, extensible and responive HTML5 base theme.
+description = A responsive HTML5 theme to get you started
 screenshot = images/bootstrap.png
 core = 7.x
 base theme = zentropy
