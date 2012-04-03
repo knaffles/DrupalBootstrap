@@ -109,14 +109,12 @@
 
       <?php print render($page['header']); ?>
 
-      <?php if ($main_menu): ?>
-        <nav id="main-menu" class="main-menu <?php print $nav_class; ?>" role="navigation">
-          <?php print render($page['navigation']); ?>
-        </nav> <!-- /#navigation -->
+      <?php if ($page['top_navigation']): ?>
+        <?php print render($page['top_navigation']); ?>
       <?php endif; ?>
 
       <?php if ($secondary_menu): ?>
-        <nav id="secondary-menu" class="secondary-menu" role="navigation">
+        <nav id="secondary-menu" class="secondary-menu">
           <?php print $secondary_nav; ?>
         </nav> <!-- /#secondary-menu -->
       <?php endif; ?>

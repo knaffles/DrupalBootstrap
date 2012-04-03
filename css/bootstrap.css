@@ -122,6 +122,7 @@ border-left: 5px solid #eeeeee;
 blockquote p {
 margin-bottom: 0;
 font-size: 16px;
+font-size: 1.6rem;
 font-weight: 300;
 line-height: 22.5px;
 }
@@ -164,6 +165,7 @@ pre {
 padding: 0 3px 2px;
 font-family: Menlo, Monaco, "Courier New", monospace;
 font-size: 12px;
+font-size: 1.2rem;
 color: #333333;
 -webkit-border-radius: 3px;
 -moz-border-radius: 3px;
@@ -180,6 +182,7 @@ display: block;
 padding: 8.5px;
 margin: 0 0 9px;
 font-size: 12.025px;
+font-size: 12.025rem;
 line-height: 18px;
 background-color: #f5f5f5;
 border: 1px solid #ccc;
@@ -252,7 +255,6 @@ background-color:#ededed;
 height:1.8em;
 line-height:1.9;
 display:block;
-font-size:.929em;
 float:left;
 padding:0 10px 3px;
 margin:0;
@@ -531,8 +533,9 @@ display:inline-block;
 /* IE7 inline-block hack */
 *zoom: 1;
 padding: 4px 10px 4px;
-margin-bottom: 0;
+margin: 0 5px 0 0;
 font-size: 13px;
+font-size: 1.3rem;
 line-height: 18px;
 color: #333333;
 text-align: center;
@@ -577,8 +580,8 @@ outline:thin dotted #333;
 outline:5px auto 0;
 outline-offset:-2px
 }
-#edit-actions input {
-margin-right:10px;
+.container-inline .form-actions input {
+margin:0;
 }
 
 /* Search */
@@ -587,14 +590,14 @@ width:100px;
 }
 
 /* Navigation */
-nav.main-menu .block-title {
+.region-top-navigation nav .block-title {
 position: absolute !important;
 clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
 clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Nav bar */
-nav.main-menu.bar {
+.region-top-navigation nav.bar {
 color: #999999;
 *position: relative;
 *z-index: 2;
@@ -619,7 +622,7 @@ border-radius: 4px;
 -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1);
 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), inset 0 -1px 0 rgba(0, 0, 0, 0.1)
 }
-nav.main-menu.bar ul.menu, nav.main-menu.bar ul.main-menu {
+.region-top-navigation nav.bar ul.menu, .region-top-navigation nav.bar ul.main-menu {
 display: block;
 position: relative;
 left: 0;
@@ -627,14 +630,14 @@ float: left;
 margin: 0 10px 0 0;
 width:100%; 
 }
-nav.main-menu.bar ul.menu > li, nav.main-menu.bar ul.main-menu > li {
+.region-top-navigation nav.bar ul.menu > li, .region-top-navigation nav.bar ul.main-menu > li {
 display: block;
 float: left;
 line-height: 18px;
 padding:0;
 margin:0;
 }
-nav.main-menu.bar ul.menu > li > a, nav.main-menu.bar ul.main-menu > li > a {
+.region-top-navigation nav.bar ul.menu > li > a, .region-top-navigation nav.bar ul.main-menu > li > a {
 display: block;
 float: none;
 padding: 10px 10px 11px;
@@ -643,29 +646,29 @@ color: #999999;
 text-decoration: none;
 text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
-nav.main-menu.bar ul.menu > li > a:hover, nav.main-menu.bar ul.main-menu > li > a:hover {
+.region-top-navigation nav.bar ul.menu > li > a:hover, .region-top-navigation nav.bar ul.main-menu > li > a:hover {
 background-color: transparent;
 color: #ffffff;
 text-decoration: none;
 }
-nav.main-menu.bar ul.menu .active > a,
-nav.main-menu.bar ul.menu .active > a:hover,
-nav.main-menu.bar ul.main-menu .active > a,
-nav.main-menu.bar ul.main-menu .active > a:hover {
+.region-top-navigation nav.bar ul.menu .active > a,
+.region-top-navigation nav.bar ul.menu .active > a:hover,
+.region-top-navigation nav.bar ul.main-menu .active > a,
+.region-top-navigation nav.bar ul.main-menu .active > a:hover {
 color: #ffffff;
 text-decoration: none;
 background-color: #222222;
 }
 
 /* Nav dropdowns */
-nav.main-menu.bar ul.menu li{
+.region-top-navigation nav.bar ul.menu li{
 position:relative;
 }
-nav.main-menu.bar ul.menu a:hover{
+.region-top-navigation nav.bar ul.menu a:hover{
 color:#fff;
 background:#6b0c36;
 }
-nav.main-menu.bar ul.menu ul{
+.region-top-navigation nav.bar ul.menu ul{
 background:#fff; /* Adding a background makes the dropdown work properly in IE7+. Make this as close to your page's background as possible (i.e. white page == white background). */
 background:rgba(255,255,255,0); /* But! Let's make the background fully transparent where we can, we don't actually want to see it if we can help it... */
 list-style:none;
@@ -673,19 +676,19 @@ position:absolute;
 left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
 z-index:1000;
 }
-nav.main-menu.bar ul.menu ul li {
+.region-top-navigation nav.bar ul.menu ul li {
 padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
 }
-nav.main-menu.bar ul.menu ul li a{
+.region-top-navigation nav.bar ul.menu ul li a{
 white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 }
-nav.main-menu.bar ul.menu li:hover ul{ /* Display the dropdown on hover */
+.region-top-navigation nav.bar ul.menu li:hover ul{ /* Display the dropdown on hover */
 left:0; /* Bring back on-screen when needed */
 }
-nav.main-menu.bar ul.menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
+.region-top-navigation nav.bar ul.menu li:hover a{ /* These create persistent hover states, meaning the top-most link stays 'hovered' even when your cursor has moved down the list. */
 background:#222222;
 }
-nav.main-menu.bar ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
+.region-top-navigation nav.bar ul.menu li:hover ul li a:hover{ /* Here we define the most explicit hover states--what happens when you hover each individual link. */
 background:#333;
 }
 
@@ -752,6 +755,19 @@ border-bottom: 1px solid #ffffff;
 *margin: -5px 0 5px;
 }
 */
+
+/* Links */
+ul.inline {
+margin-left:0;
+}
+ul.inline li {
+padding:0 10px 0 0;
+}
+
+/* Nodes */
+article.node-teaser {
+margin-bottom:30px;
+}
 
 
 
