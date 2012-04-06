@@ -769,8 +769,15 @@ padding:0 10px 0 0;
 article.node-teaser {
 margin-bottom:30px;
 }
-
-
+.unpublished {
+position:absolute;
+font-size:50px;
+font-size:5.0rem;
+letter-spacing:2px;
+text-transform:uppercase;
+color:#806d7e;
+opacity:0.5;
+}
 
 /* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */
 /* Zentropy ships with a sweet spinning Druplicon Ajax Loader but we understand it may be a bit too awesome for everyday use. */
