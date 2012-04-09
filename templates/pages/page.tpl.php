@@ -110,6 +110,11 @@
       <?php print render($page['header']); ?>
 
       <?php if ($page['top_navigation']): ?>
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
         <?php print render($page['top_navigation']); ?>
       <?php endif; ?>
 

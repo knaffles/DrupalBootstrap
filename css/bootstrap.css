@@ -525,7 +525,7 @@ height:auto;
 }
 
 /* Submit buttons */
-.form-actions input {
+.form-actions input, .btn {
 width:auto;
 height:auto;
 display:inline-block;
@@ -564,7 +564,7 @@ box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05
 cursor: pointer;
 *margin-left: .3em;
 }
-.form-actions input:hover {
+.form-actions input:hover, .btn:hover {
 color:#333333;
 text-decoration:none;
 background-color:#e6e6e6;
@@ -575,7 +575,7 @@ background-position:0 -15px;
 -o-transition:background-position .1s linear;
 transition:background-position .1s linear
 }
-.form-actions input:focus {
+.form-actions input:focus, .btn:focus {
 outline:thin dotted #333;
 outline:5px auto 0;
 outline-offset:-2px
@@ -597,6 +597,55 @@ clip: rect(1px, 1px, 1px, 1px);
 }
 
 /* Nav bar */
+.btn-navbar {
+display: none;
+position: absolute;
+right:15px;
+margin:5px 5px 0 5px;
+/*display: none;*/
+padding: 7px 10px;
+background-color: #2c2c2c;
+background-image: -moz-linear-gradient(top, #333333, #222222);
+background-image: -ms-linear-gradient(top, #333333, #222222);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+background-image: -webkit-linear-gradient(top, #333333, #222222);
+background-image: -o-linear-gradient(top, #333333, #222222);
+background-image: linear-gradient(top, #333333, #222222);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#333333', endColorstr='#222222', GradientType=0);
+border-color: #222222 #222222 #000000;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+filter: progid:dximagetransform.microsoft.gradient(enabled=false);
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.075);
+}
+.btn-navbar:hover,
+.btn-navbar:active,
+.btn-navbar.active,
+.btn-navbar.disabled,
+.btn-navbar[disabled] {
+background-color: #222222;
+}
+.btn-navbar:active,
+.btn-navbar.active {
+background-color: #080808 \9;
+}
+.btn-navbar .icon-bar {
+display: block;
+width: 18px;
+height: 2px;
+background-color: #f5f5f5;
+-webkit-border-radius: 1px;
+-moz-border-radius: 1px;
+border-radius: 1px;
+-webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+-moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-navbar .icon-bar + .icon-bar {
+margin-top: 3px;
+}
 .region-top-navigation nav.bar {
 color: #999999;
 *position: relative;
@@ -777,6 +826,53 @@ letter-spacing:2px;
 text-transform:uppercase;
 color:#806d7e;
 opacity:0.5;
+}
+
+/* Target everything below 768px */
+@media (max-width: 767px) {
+.btn-navbar {
+display: block;
+z-index:1001;
+}
+.region-top-navigation nav.bar ul.menu {
+float:none;
+display:none;
+}
+.region-top-navigation nav h2.block-title {
+position:static !important;
+font-size:16px;
+font-size:1.6rem;
+line-height:40px;
+color:#ffffff;
+}
+.region-top-navigation nav.bar ul.menu li {
+float:none;
+}
+.region-top-navigation nav.bar ul.menu ul {
+position:relative;
+left:10px;
+padding-top:0;
+width:auto;
+}
+.region-top-navigation nav.bar ul.menu li:hover ul {
+left:10px;
+}
+.region-top-navigation nav.bar ul.menu ul li {
+width:auto;
+}
+.region-top-navigation nav.bar ul.menu ul, .region-top-navigation nav.bar ul.menu ul li a {
+width:auto;
+background-color: transparent;
+}
+.region-top-navigation nav.bar ul.menu li:hover a{
+background:transparent;
+}
+.region-top-navigation nav.bar ul.menu li a:hover,
+.region-top-navigation nav.bar ul.menu li:hover a.active,
+.region-top-navigation nav.bar ul.menu li ul li a:hover,
+.region-top-navigation nav.bar ul.menu li:hover ul li a:hover{
+background:#222;
+}
 }
 
 /* If you are using the "Enable Ajax Loader" option from Zentropy, you can customize the loader using the below selector */

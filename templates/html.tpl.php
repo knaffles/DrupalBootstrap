@@ -60,9 +60,6 @@ $html_attributes = "lang=\"{$language->language}\" dir=\"{$language->dir}\" {$rd
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
     <?php print $html5shiv; ?>
-    <?php if (!$zentropy_scripts_footer): ?>
-      <?php print $scripts; ?>
-    <?php endif; ?>
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
@@ -73,9 +70,6 @@ $html_attributes = "lang=\"{$language->language}\" dir=\"{$language->dir}\" {$rd
     <?php // Prompt IE users to install Chrome Frame ?>
     <?php print $prompt_cf; ?>
 
-    <?php if ($zentropy_scripts_footer): ?>
-      <!-- Add scripts to bottom for better performance -->
-      <?php print $scripts; ?>
-    <?php endif; ?>
+    <?php print $scripts; ?>
   </body>
 </html>
