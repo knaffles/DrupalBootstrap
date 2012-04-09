@@ -49,7 +49,7 @@ function bootstrap_preprocess_html(&$vars) {
   
   // IMPORTANT: DO NOT EDIT OR REMOVE THE LINES BELOW!!!
   
-  drupal_add_js('sites/all/themes/bootstrap/js/modernizr.js', array('scope' => 'header', 'weight' => -20, 'group' => JS_LIBRARY, 'every_page' => TRUE));
+  drupal_add_js(path_to_theme() . '/js/modernizr.js', array('scope' => 'header', 'weight' => -20, 'group' => JS_LIBRARY, 'every_page' => TRUE));
 
   #selectivizr#
 
