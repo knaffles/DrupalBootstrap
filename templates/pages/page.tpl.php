@@ -180,7 +180,9 @@
               </div> <!-- /.content-header -->
             <?php endif; ?>
 
-            <?php print render($page['content']); ?>
+            <?php if (!$is_front): ?>
+              <?php print render($page['content']); ?>
+            <?php endif; ?>
             <?php print render($page['content_bottom']); ?>
 
             <?php print $feed_icons; ?>
