@@ -13,3 +13,5 @@ http://drupal.org/project/zentropy
 	<?php endif; ?>
 
 4) To override any templates, start by taking a copy of the appropriate template from the Zentropy theme templates and create a copy in this theme's template folder.
+
+5) Because this theme relies on respond.js to enable media queries in IE, and because respond.js does not parse @imported stylesheets, you have to "Aggregate and compress CSS stylesheets" (Configuration -> Performance) in order for IE to render properly. Once stylesheets are aggregated, Drupal then references them with link tags instead of @importing them (not sure why).
