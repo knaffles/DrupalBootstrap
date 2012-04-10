@@ -57,6 +57,8 @@ function bootstrap_preprocess_html(&$vars) {
   
   #respond#
   
+  drupal_add_js(path_to_theme() . '/js/respond.min.js', array('scope' => 'header', 'weight' => -20, 'group' => JS_LIBRARY, 'every_page' => TRUE));
+
   #css3mq#
   
   #easing#

@@ -59,7 +59,7 @@ $html_attributes = "lang=\"{$language->language}\" dir=\"{$language->dir}\" {$rd
 
     <title><?php print $head_title; ?></title>
     <?php print $styles; ?>
-    <?php print $html5shiv; ?>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
   </head>
   <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
 
