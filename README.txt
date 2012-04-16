@@ -2,6 +2,8 @@ Some notes about this theme:
 
 1) You must add a menu block to either the top-navigation region or a sidebar for any navigation to appear. This theme does not automatically render navigation as most Drupal themes do.
 
+If you want hover-over dropdowns to work, you will need to edit the top level links and set them to "Always show as expanded."
+
 2) This theme is a subthem of the Zentropy theme. You have to install the Zentropy theme on your site in order for this theme to work. Zentropy is here:
 
 http://drupal.org/project/zentropy
